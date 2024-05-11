@@ -1,5 +1,5 @@
 import { signInWithPopup } from 'firebase/auth';
-import { auth, ptovider} from '../firebase';
+import { auth, provider} from '../firebase';
 import { useNavigate } from 'react-router-dom';
 type Props = {
   setIsAuth: (isLogin:boolean) => void
@@ -10,7 +10,7 @@ export const Login = (props:Props) => {
   const navigate = useNavigate();
   const loginInWithGoogle = () => {
     // Googleでログイン
-    signInWithPopup(auth, ptovider).then((result) => {
+    signInWithPopup(auth, provider).then((result) => {
       console.log(result)
       console.log("ログイン成功")
       
