@@ -8,13 +8,13 @@ export const NavBar: React.FC = () => {
   return (
     <nav>
         <Link to="/">
-            <FontAwesomeIcon icon={faHouseChimney} />ホーム
+            <FontAwesomeIcon className='navIcon' icon={faHouseChimney} />ホーム
         </Link>
         <Link to="/CreatePost">
-            <FontAwesomeIcon icon={faFilePen} />記事投稿
+            <FontAwesomeIcon className='navIcon' icon={faFilePen} />記事投稿
         </Link>
         <Link to="/Login">
-            <FontAwesomeIcon icon={faRightToBracket} />ログイン
+            <FontAwesomeIcon  className='navIcon'icon={faRightToBracket} />ログイン
         </Link>
     </nav>
     )

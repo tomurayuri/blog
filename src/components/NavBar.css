@@ -17,6 +17,6 @@ nav a:hover {
     color: #0f4d46;
 }
 
-nav a svg {
+.navIcon {
     margin-right: 5px;
 }
