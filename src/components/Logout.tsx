@@ -11,6 +11,7 @@ export const Logout = (props:Props) => {
   const logout = () => {
     // ログアウト
     signOut(auth).then(() => {
+      console.log("ログアウト成功");
       localStorage.clear();
       setIsAuth(false);
       navigate("/login")
